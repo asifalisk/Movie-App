@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="input-container">
+                <input id="title" class="Title"  placeholder="Enter the movie name" type="text">
+                <button id="SearchBtn" onclick="render()" class="btns">Search</button>
+            </div>
+        </div>
+        <div class="spinner d-none" id="spinner">
+        </div>
+        <section class="about" id="about">
+            <div class="details">
+                <p id="error" class="bg-danger"></p>
+                <h1 id="Title"></h1>
+                <p id="plot"></p>
+                <p id="actors"></p>
+                <p id="director"></p>
+                <p id="genre"></p>
+                <p id="boxoffice"></p>
+                <p id="imdbrating"></p>
+                <p id="released"></p>
+                <p id="runtime"></p>
+                <p id="type"></p>
+
+            </div>
+            <div class="img">
+                <img id="poster" src="" alt="" width="300">
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
